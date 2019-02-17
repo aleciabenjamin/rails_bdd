@@ -1,5 +1,18 @@
 Rails.application.routes.draw do
 
-  root controller: :articles, action: :index
-  
+  get 'welcome/index'
+
+  resources :articles
+
+  root controller: :articles, action: :index 
+
+  get 'publisherarticle/new'
+
 end
+
+
+  
+ 
+  
+  
+
