@@ -6,9 +6,9 @@ Feature: List articles on the landing page
   
   Scenario: View list of articles on the landing page
     Given the following news articles exist in our database:
-        | title                       | content                                   |
-        | Sweden has a new government | Äntligen                                  |  
-        | No more burning cars        | Stability and order restored in Stockholm |
+    | title                       | content                                   |
+    | Sweden has a new government | Äntligen                                  |  
+    | No more burning cars        | Stability and order restored in Stockholm |
     When I visit the site
     Then I should see a list of articles
     And I should see "Sweden has a new government"
