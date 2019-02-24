@@ -4,3 +4,6 @@ Given("the following news articles exist in our database:") do |table|
     end  
 end
 
+Given("I visit the landing page") do
+  visit root_path
+end

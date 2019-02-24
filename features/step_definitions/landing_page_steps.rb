@@ -1,21 +1,21 @@
-When("I visit the site") do
-    visit '/'
+Given("the following articles exists") do |table|
+  table.hashes.each do |article|
+    Article.create!(article)
+  end
 end
 
-Given("I visit the landing page") do
+When("I visit the site") do
     visit root_path
-  end
+end
+
   
   When("I click {string} link") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
   end
   
   When("I fill in {string} with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
   end
   
   When("I click {string} button") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
   end
   
   
